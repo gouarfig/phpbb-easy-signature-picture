@@ -1,0 +1,7 @@
+services:
+    fq.sigpic.listener:
+        class: fq\sigpic\event\listener
+        arguments:
+            - @user
+        tags:
+            - { name: event.listener }
